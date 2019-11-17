@@ -1,0 +1,276 @@
+html{
+	position: relative;
+}
+body{
+	margin-bottom: 100px;	
+}
+
+nav img{
+	position: fixed;
+	top: 3px;
+	left: 15px;
+	margin: 0;
+	width: 80px;
+}
+
+.navbar {
+  height: 80px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: background-color 1s ease 0s;
+}
+
+.navbar-default {
+  margin-top: 0;
+  color: white;
+}
+/*.navbar-default .navbar-brand:hover {
+  color: #3fc5f0;
+  border: 1px solid #3fc5f0;
+}*/
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  margin: 10px 5px 5px 5px;
+  font-size: 18px;
+  text-shadow: 1px 1px 10px rgba(0,0,0,.8);
+}
+
+.navbar-default .navbar-nav > li > a:hover{ 
+  text-shadow: none;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #465881;
+  /*border: 1px solid #3fc5f0;*/
+  border-radius: 5px;
+
+}
+.navbar-default .navbar-nav > li > a:visited {
+  color: #3fc5f0;
+  text-decoration: none;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #3fc5f0;
+}
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #1b2a49;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  color: #3fc5f0;
+  background-color: #fff;
+}
+.navbar-default .navbar-collapse.collapse.in ul {
+  background-color: #1b2a49;
+}
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+  background-color: #1b2a49;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px grey;
+}
+/*.navbar.solid .navbar-brand {
+  color: #3fc5f0;
+  transition: color 1s ease 0s;
+}*/
+.navbar.solid .navbar-nav > li > a {
+  color: #fff;
+  transition: color 1s ease 0s;
+  text-shadow: none;
+}
+
+.navbar.solid .navbar-nav > li > a:hover {
+  color: #eee;
+  transition: color .5s ease 0s;
+}
+
+/*coba paralax jumbotron*/
+
+
+
+/*end paralax jumbotron*/
+hr{
+	width: 250px;
+	border-top: 3px solid #333;
+}
+
+section{
+	min-height: 600px;
+}
+
+.jumbotron{
+	margin: 0;
+	min-height: 650px;
+	color: #fff;
+	background-image: url('../img/ok.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0px;
+	overflow: hidden;
+}
+
+.jumbotron img{
+	width: 250px;
+	border: 5px solid #eee;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.8);
+	z-index: 2;
+	transform: scale(2);
+	transition: .8s;
+}
+.jumbotron h1{
+	z-index: 1;
+	transform: translate(-200px, 0);
+}
+.jumbotron p{
+	transform: translate(150px, 0);
+}
+
+.jumbotron h1, .jumbotron p{
+	text-shadow: 1px 1px 10px rgba(0,0,0,.8);
+	transition: .9s;
+}
+
+.jumbotron img, .jumbotron h1, .jumbotron p{
+	opacity: 0;
+}
+
+.about{
+	background-color: #c9d1d3;
+}
+
+.about .container{
+	text-align: justify;
+}
+
+.about .myinfo{
+	background-color: #465881;
+	color: #eaeaea;
+}
+
+.portfolio{
+	background-color: #465881;
+	min-height: 700px;
+}
+
+.portfolio .thumbnail {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: 1s;
+}
+
+.portfolio .thumbnail.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+
+}
+
+.portfolio img{
+background-size: cover;
+width: 350px;
+height: 233px;
+}
+
+.portfolio hr{
+	width: 250px;
+	border-top: 3px solid #eaeaea;
+}
+
+.portfolio h2{
+	color: #eaeaea;
+}
+
+.contact{
+	min-height: 950px;
+	background-color: #c9d1d3;
+}
+
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	background-color: #1b2a49;
+	padding-top: 10px;
+}
+
+footer p{
+	color: #eaeaea;
+	font-size: 1em;
+}
+
+footer h3{
+	color: #eaeaea;
+	text-align: center;
+}
+
+footer img{
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+
+}
+
+footer .social{
+	margin-left: 140px;
+}
+
+footer .social a{
+	text-decoration: none;
+	color: #eaeaea;
+}
+
+.info hr{
+	border-top: 3px solid #eaeaea;
+}
+
+.quote{
+	background-image: url('../img/qq.jpg');
+	margin: 0;
+	height: 100px;
+	color: #fff;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0;
+	overflow: hidden;
+}
+
+.quote h3{
+	color: #fff;
+	text-align : center;
+}
+
+.quote h1{
+	transform: translate(-200px, 0);
+}
+
+.quote hr{
+	border-top: 3px solid #fff;
+	transform: translate(150px, 0);
+	box-shadow: 1px 1px 10px rgba(0,0,0,.8);
+}
+
+.quote .atas{
+	margin-top: 60px;
+	transform: translate(0, -100px);
+}
+
+.quote .bawah{
+	transform: translate(0, 100px);
+}
+
+.quote .atas, .quote .bawah, .quote h1, .quote hr{
+	transition: 1s;
+	opacity: 0;
+	text-shadow: 1px 1px 10px rgba(0,0,0,.8);
+}
